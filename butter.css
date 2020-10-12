@@ -1,0 +1,507 @@
+/* BUTTER */
+.rec-root {
+  position: relative;
+  border: 10px solid black;
+  max-width: 1500px;
+  min-width: 400px;
+  height: 150px;
+}
+
+.dates {
+  position: relative;
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  font-size: calc(2em + 2vw)
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+
+}
+
+.rec-a {
+  position: absolute;
+  /* margin: -10 0 0 -10; */
+  border: 10px solid red;
+  min-width: 95%;
+  height: 70%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.rec-b {
+  position: absolute;
+  border: 10px solid blue;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 90%;
+  height: 40%;
+}
+
+.rec-c {
+  position: absolute;
+  border: 10px solid green;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 85%;
+  height: 10%;
+}
+
+.rec-aa {
+  position: absolute;
+  border: 10px solid red;
+  width: 95%;
+  height: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.rec-bb {
+  position: absolute;
+  border: 10px solid blue;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 90%;
+  height: 40%;
+}
+
+.rec-cc {
+  position: absolute;
+  border: 10px solid green;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 85%;
+  height: 10%;
+}
+
+.a {
+  grid-column: span 1;
+}
+
+.b {
+  grid-column: span 5;
+}
+
+.c {
+  grid-column: span 2;
+}
+
+.d {
+  grid-column: span 4;
+}
+
+/* SPANS */
+
+body {
+  background: #fff;
+}
+
+ul li {
+  list-style-type: none;
+  padding-bottom: 10px;
+  border-bottom: 5px solid #000;
+}
+
+.post {
+  display: inline;
+
+}
+
+.spans {
+  display: inline;
+
+}
+
+.brder {
+  border-bottom: 5px solid green;
+  margin: 5px;
+}
+
+.brder-empty {
+  display: block;
+  position: relative;
+  border-bottom: 5px solid white;
+
+}
+
+.rtt {
+  width: 1210px;
+}
+
+.brder-vert {
+  border-left: 5px solid green;
+  margin: 2px;
+  height: 15%;
+}
+
+.brder2 {
+  display: block;
+  position: relative;
+  border-bottom: 5px solid green;
+  margin: 5px 5px 5px 5px;
+  max-width: 90%;
+}
+
+.txt {
+  /* position: absolute;
+    text-align: right;
+    top: 0 !important;
+    right: -40 !important; */
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  left: 55%;
+  /* top: 0; */
+  /* z-index: 1; */
+}
+
+.nwvert {
+  width: 5px;
+  background: blue;
+  height: 100%;
+}
+
+.nwvert-wh {
+  width: 5px;
+  background: white;
+  height: 100%;
+}
+
+.nwhorz {
+  width: 100%;
+  height: 5px;
+  background: red;
+}
+
+.nwhorz-wh {
+  width: 100%;
+  height: 5px;
+  background: white;
+}
+
+.tst {
+  position: absolute;
+}
+
+/* marquee shit */
+.marquee {
+  vertical-align: middle;
+
+  height: 15px;
+  overflow: hidden;
+  position: relative;
+}
+
+.marqueediv {
+  display: block;
+  width: 200%;
+  height: 15px;
+
+  position: absolute;
+  overflow: hidden;
+
+  animation: marquee 111s linear infinite;
+}
+
+.marqueespan {
+  float: left;
+  width: fit-content;
+  background-color: white;
+  font-size: 5px;
+  position: absolute;
+  vertical-align: middle;
+  top: -1px;
+}
+
+@keyframes marquee {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: 100%;
+  }
+}
+
+/* rect shit  */
+.cnt-rec {
+  min-width: 300px;
+  height: 300px;
+  position: relative;
+  border: 10px solid black;
+
+}
+
+.rect-sml-95 {
+  background: white;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.rect-sml-1 {
+  position: absolute;
+  border: 10px solid black;
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0.98, 0.88);
+}
+
+.rect-sml-2 {
+  border: 10px solid black;
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0.96, 0.76);
+}
+
+.rect-sml-3 {
+  border: 10px solid black;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0.94, 0.64);
+}
+
+.rect-sml-4 {
+  position: absolute;
+  border: 10px solid black;
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0.92, 0.52);
+}
+
+.rect-sml-5 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0.98, 0.88);
+}
+
+.root-container {
+  /* min-width: 100px; */
+  /* max-width: 1000px; */
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* 
+.rf-vr-4 {
+  position: absolute;
+  border-right: 5px solid red;
+  height: calc(100% - 70px);
+  width: 100%;
+  margin-top: 35px;
+  margin-left: -30px;
+}
+@media only screen and (max-width: 500px) {
+  .rf-vr-4 {
+      display: none;
+  }
+} */
+@media only screen and (max-width: 1400px) {
+  .ww-100 {
+      width:100%;
+  }
+}
+/* @media only screen and  (min-width: 900px) and (max-width: 1400px) {
+  .hi {
+      display:none!important;
+  }
+} */
+
+
+.prj {
+  position: absolute;
+  background-color: white;
+  height: 40px;
+  font-size: 20px;
+  align-items: center;
+  left: 100px;
+}
+
+.mgn-lft {
+  margin-left: 5px;
+}
+/* if screen is smaller than a certain width (960px, with 415min width of each column), we hide a few vertical elements */
+
+/* eles first, then media */
+.nwvert-r-1 {
+  width: 5px;
+  background: blue;
+  height: 100%;
+}
+
+.nwvert-wh-1 {
+  width: 5px;
+  background: white;
+  height: 100%;
+}
+.nwvert-r-2 {
+  width: 5px;
+  background: blue;
+  height: 100%;
+}
+
+.nwvert-wh-2 {
+  width: 5px;
+  background: white;
+  height: 100%;
+}
+.nwvert-r-3 {
+  width: 5px;
+  background: blue;
+  height: 100%;
+}
+
+.nwvert-wh-3 {
+  width: 5px;
+  background: white;
+  height: 100%;
+}
+/* 3 columns each min 415 = 1245, shrinking starts at 1560px */
+@media only screen and (min-width: 1245px) and (max-width: 1405px) {
+  .nwvert-r-1 {
+      display: none !important;
+  }
+}
+@media only screen and (min-width: 1245px) and (max-width: 1395px) {
+  .nwvert-r-2 {
+      display: none !important;
+  }
+}
+@media only screen and (min-width: 1245px) and (max-width: 1385px) {
+  .nwvert-r-3 {
+      display: none !important;
+  }
+}
+/* 2 columns each min 415 = 830  */
+@media only screen and (min-width: 830px) and (max-width: 960px) {
+  .nwvert-r-1 {
+      display: none !important;
+  }
+}
+@media only screen and (min-width: 830px) and (max-width: 950px) {
+  .nwvert-r-2 {
+      display: none !important;
+  }
+}
+@media only screen and (min-width: 830px) and (max-width: 940px) {
+  .nwvert-r-3 {
+      display: none !important;
+  }
+}
+/* one screen only, need one for two as well (left auto right auto margin) */
+@media only screen and (max-width: 1260px) {
+  .main {
+    margin: 0 auto;
+    flex-basis: 100%;
+  }
+}
+.main2 {
+  flex: 1 1 auto;     
+  position: relative;
+  min-width: 1px;
+  margin: auto;
+}
+/* .main {
+  flex: 1 1 auto;    
+  position: relative;
+  min-width: 1px;
+  z-index: 1;
+} */
+/* main:before {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+          transform: translate3d(-50%, -50%, 0);
+} */
+.center-main {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+video {
+  width: 100% !important;
+  height: auto !important;
+}
+html, body{
+  height: 100%;
+}
+.diag { 
+  /* transform: rotate(45deg); */
+
+}
+.diag-l {
+  position: absolute;
+  border-top: 5px solid orange;
+  /* height: calc(100% - 80px);
+  width: calc(50% - 40px); */
+  height: 100%;
+  width: 100%;
+  margin-top: 40px;
+  margin-left: 40px;
+  transform-origin: 42.5px 42.5px;
+  transform: translateX(4px) rotate(45deg);
+}
+.diag-r {
+  position: absolute;
+  border-top: 5px solid green;
+  height: calc(100% - 80px);
+  width: calc(50% - 40px);
+  margin-top: 40px;
+  margin-left: 40px;
+  transform-origin: left top;
+  transform: translateX(70px) scaleX(-1) rotate(45deg);
+}
+.cnter {
+  /* border: 1.92px solid gray; */
+    height:  80px;
+    width: 60px;
+    /* border-radius: 3px; */
+    margin-top: 40px;
+    margin-left: 40px;
+}
+.cnter2 {
+  border-left: 32px solid transparent;
+  border-right: 32px solid transparent;
+  border-top: 32px solid black;
+}
+.cnter3 {
+  margin-top: -32.256px;
+  margin-left: -29.44px;
+  border-left: 29.44px solid transparent;
+  border-right: 29.44px solid transparent;
+  border-top: 29.44px solid white;
+  border-radius: 0px;
+}
