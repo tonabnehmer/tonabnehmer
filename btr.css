@@ -3,7 +3,7 @@
   border-right: 5px solid black;
   height: calc(100% - 0px);
   width: 100%;
-  margin-top: 0;
+  margin-top: 0px;
   margin-left: 0px;
 }
 
@@ -13,7 +13,7 @@
   height: calc(100% - 0px);
   width: 100%;
   margin-left: 0px;
-  margin-top: 0;
+  margin-top: 0px;
 }
 
 .lf-hr-1 {
@@ -31,7 +31,7 @@
   border-right: 5px solid black;
   height: calc(100% - 28px);
   width: 100%;
-  margin-top: 14;
+  margin-top: 14px;
   margin-left: -10px;
 }
 
@@ -41,7 +41,7 @@
   height: calc(100% - 28px);
   width: 100%;
   margin-left: 10px;
-  margin-top: 14;
+  margin-top: 14px;
 }
 
 .lf-hr-2 {
@@ -59,7 +59,7 @@
   border-right: 5px solid black;
   height: calc(100% - 48px);
   width: 100%;
-  margin-top: 24;
+  margin-top: 24px;
   margin-left: -20px;
 }
 
@@ -69,7 +69,7 @@
   height: calc(100% - 48px);
   width: 100%;
   margin-left: 20px;
-  margin-top: 24;
+  margin-top: 24px;
 }
 
 .lf-hr-3 {
@@ -87,7 +87,7 @@
   border-right: 5px solid black;
   height: calc(100% - 68px);
   width: 100%;
-  margin-top: 34;
+  margin-top: 34px;
   margin-left: -30px;
 }
 
@@ -97,7 +97,7 @@
   height: calc(100% - 68px);
   width: 100%;
   margin-left: 30px;
-  margin-top: 34;
+  margin-top: 34px;
 }
 
 .lf-hr-4 {
@@ -115,7 +115,7 @@
   border-right: 5px solid black;
   height: calc(100% - 88px);
   width: 100%;
-  margin-top: 44;
+  margin-top: 44px;
   margin-left: -40px;
 }
 
@@ -125,7 +125,7 @@
   height: calc(100% - 88px);
   width: 100%;
   margin-left: 40px;
-  margin-top: 44;
+  margin-top: 44px;
 }
 
 .lf-hr-5 {
@@ -143,7 +143,7 @@
   border-right: 5px solid black;
   height: calc(100% - 108px);
   width: 100%;
-  margin-top: 54;
+  margin-top: 54px;
   margin-left: -50px;
 }
 
@@ -153,7 +153,7 @@
   height: calc(100% - 108px);
   width: 100%;
   margin-left: 50px;
-  margin-top: 54;
+  margin-top: 54px;
 }
 
 .lf-hr-6 {
@@ -171,7 +171,7 @@
   border-right: 5px solid black;
   height: calc(100% - 128px);
   width: 100%;
-  margin-top: 64;
+  margin-top: 64px;
   margin-left: -60px;
 }
 
@@ -181,7 +181,7 @@
   height: calc(100% - 128px);
   width: 100%;
   margin-left: 60px;
-  margin-top: 64;
+  margin-top: 64px;
 }
 
 .lf-hr-7 {
@@ -199,7 +199,7 @@
   border-right: 5px solid black;
   height: calc(100% - 148px);
   width: 100%;
-  margin-top: 74;
+  margin-top: 74px;
   margin-left: -70px;
 }
 
@@ -209,7 +209,7 @@
   height: calc(100% - 148px);
   width: 100%;
   margin-left: 70px;
-  margin-top: 74;
+  margin-top: 74px;
 }
 
 .lf-hr-8 {
@@ -227,7 +227,7 @@
   border-right: 5px solid black;
   height: calc(100% - 168px);
   width: 100%;
-  margin-top: 84;
+  margin-top: 84px;
   margin-left: -80px;
 }
 
@@ -237,7 +237,7 @@
   height: calc(100% - 168px);
   width: 100%;
   margin-left: 80px;
-  margin-top: 84;
+  margin-top: 84px;
 }
 
 .lf-hr-9 {
@@ -255,7 +255,7 @@
   border-right: 5px solid black;
   height: calc(100% - 188px);
   width: 100%;
-  margin-top: 94;
+  margin-top: 94px;
   margin-left: -90px;
 }
 
@@ -265,7 +265,7 @@
   height: calc(100% - 188px);
   width: 100%;
   margin-left: 90px;
-  margin-top: 94;
+  margin-top: 94px;
 }
 
 .lf-hr-10 {
@@ -283,7 +283,7 @@
   border-right: 5px solid black;
   height: calc(100% - 208px);
   width: 100%;
-  margin-top: 104;
+  margin-top: 104px;
   margin-left: -100px;
 }
 
@@ -293,7 +293,7 @@
   height: calc(100% - 208px);
   width: 100%;
   margin-left: 100px;
-  margin-top: 104;
+  margin-top: 104px;
 }
 
 .lf-hr-11 {
@@ -311,7 +311,7 @@
   border-right: 5px solid black;
   height: calc(100% - 228px);
   width: 100%;
-  margin-top: 114;
+  margin-top: 114px;
   margin-left: -110px;
 }
 
@@ -321,7 +321,7 @@
   height: calc(100% - 228px);
   width: 100%;
   margin-left: 110px;
-  margin-top: 114;
+  margin-top: 114px;
 }
 
 .lf-hr-12 {
@@ -339,7 +339,7 @@
   border-right: 5px solid black;
   height: calc(100% - 248px);
   width: 100%;
-  margin-top: 124;
+  margin-top: 124px;
   margin-left: -120px;
 }
 
@@ -349,7 +349,7 @@
   height: calc(100% - 248px);
   width: 100%;
   margin-left: 120px;
-  margin-top: 124;
+  margin-top: 124px;
 }
 
 .lf-hr-13 {
@@ -367,7 +367,7 @@
   border-right: 5px solid black;
   height: calc(100% - 268px);
   width: 100%;
-  margin-top: 134;
+  margin-top: 134px;
   margin-left: -130px;
 }
 
@@ -377,7 +377,7 @@
   height: calc(100% - 268px);
   width: 100%;
   margin-left: 130px;
-  margin-top: 134;
+  margin-top: 134px;
 }
 
 .lf-hr-14 {
@@ -395,7 +395,7 @@
   border-right: 5px solid black;
   height: calc(100% - 288px);
   width: 100%;
-  margin-top: 144;
+  margin-top: 144px;
   margin-left: -140px;
 }
 
@@ -405,7 +405,7 @@
   height: calc(100% - 288px);
   width: 100%;
   margin-left: 140px;
-  margin-top: 144;
+  margin-top: 144px;
 }
 
 .lf-hr-15 {
@@ -423,7 +423,7 @@
   border-right: 5px solid black;
   height: calc(100% - 308px);
   width: 100%;
-  margin-top: 154;
+  margin-top: 154px;
   margin-left: -150px;
 }
 
@@ -433,7 +433,7 @@
   height: calc(100% - 308px);
   width: 100%;
   margin-left: 150px;
-  margin-top: 154;
+  margin-top: 154px;
 }
 
 .lf-hr-16 {
