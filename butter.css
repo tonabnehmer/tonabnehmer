@@ -340,11 +340,13 @@ ul li {
 
 .prj {
   position: absolute;
-  background-color: white;
+  background-color: transparent;
   height: 40px;
   font-size: 20px;
   align-items: center;
   left: 100px;
+  color: lightblue;
+  font-weight: bold;
 }
 
 .mgn-lft {
@@ -423,6 +425,9 @@ ul li {
   .main {
     margin: 0 auto;
     flex-basis: 100%;
+  }
+  .mgn-sml-disp {
+    margin-bottom: 5px;
   }
 }
 .main2 {
@@ -504,4 +509,9 @@ html, body{
   border-right: 29.44px solid transparent;
   border-top: 29.44px solid white;
   border-radius: 0px;
+}
+.tckr {
+  background-color: transparent!important;
+  color: red;
+  font-weight: bold;
 }
