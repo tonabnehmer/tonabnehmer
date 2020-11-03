@@ -1,20 +1,20 @@
-/* .sidebar {
-  flex: 0 0 500px;
-  background-color: greenyellow; 
-} */
-/* @media screen and (max-width:767px){
-    .chat-wrapper{position:relative;height:300px;left:0;}
-  } */
-/* .content-right {
-  background-color: beige; 
 
-} */
-
+.tckr {
+  background-color: transparent!important;
+  color: red;
+  font-weight: bold;
+}
+.center-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+}
 /* sidebar */
 body {
   height: 100vh;
   overflow-x: hidden;
-  padding-top: 48px;
+  /* padding-top: 55px; */
 }
 
 .w-sidebar {
@@ -74,25 +74,4 @@ body {
     min-width: initial;
   }
 
-}
-.tckr {
-  background-color: transparent!important;
-  color: red;
-  font-weight: bold;
-}
-
-.project-link {
-  color: black;
-}
-.project-link:hover {
-  color: black;
-}
-.project-link-active {
- font-style: italic; 
-}
-.carousel .carousel-control-prev, .carousel .carousel-control-next {
-  visibility: hidden; 
-}
-.carousel:hover .carousel-control-prev, .carousel:hover .carousel-control-next {
-  visibility: visible; 
 }

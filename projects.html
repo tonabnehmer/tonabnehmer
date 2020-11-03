@@ -27,13 +27,15 @@
       });
     });
     function displayProject(number) {
-      if (number === 1) {
-        $("#car2").css({ "display": "none" });
-        $("#car1").css({ "display": "block" });
-      } else {
-        $("#car2").css({ "display": "block" });
-        $("#car1").css({ "display": "none" });
+      let numberOfProjects = 6;
+      for (let i = 1; i <= numberOfProjects; i++) {
+        $("#prj"+ i).removeClass("project-link-active");
+        if (number === i)
+          continue;
+        $("#car"+ i).css({ "display": "none" });
       }
+      $("#car"+ number).css({ "display": "block" });
+      $("#prj"+ number).addClass("project-link-active");
     }
   </script>
 </head>
@@ -73,25 +75,25 @@
       <div class="col-3 p-0 h-100 text-black w-sidebar navbar-collapse collapse d-none d-md-flex sidebar">
         <!-- fixed sidebar -->
         <div class="navbar-light bg-light position-fixed h-100 w-sidebar">
-          <h6 class="px-3 pt-3">Projects</h6>
+          <h6 class="px-3 pt-3">projects</h6>
           <ul class="nav flex-column flex-nowrap text-truncate">
             <li class="nav-item">
-              <a class="nav-link" href="#" onclick="displayProject(1)">neunerhaus</a>
+              <a id="prj1" class="nav-link project-link project-link-active" href="#" onclick="displayProject(1)">neunerhaus</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" onclick="displayProject(2)">pffv</a>
+              <a id="prj2" class="nav-link project-link" href="#" onclick="displayProject(2)">pffv</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">transition</a>
+              <a id="prj3" class="nav-link project-link" href="#" onclick="displayProject(3)">transition</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">waterdrop</a>
+              <a id="prj4" class="nav-link project-link" href="#" onclick="displayProject(4)">waterdrop</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">manufakt eins</a>
+              <a id="prj5" class="nav-link project-link" href="#"" onclick="displayProject(5)">manufakt eins</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">project sechs</a>
+              <a id="prj6" class="nav-link project-link" href="#" onclick="displayProject(6)">project sechs</a>
             </li>
           </ul>
         </div>
