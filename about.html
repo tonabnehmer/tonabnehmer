@@ -14,28 +14,31 @@
     crossorigin="anonymous"></script>
   <script src="eocjs/eocjs-newsticker.js"></script>
   <link rel="stylesheet" href="eocjs/eocjs-newsticker.css" />
-
+  <script src="https://kit.fontawesome.com/73ae10318d.js" crossorigin="anonymous"></script>
   <script>
-    // $(document).ready(function () {
-    //   $("#tckr").eocjsNewsticker({
-    //     // animation speed
-    //     speed: 20,
-    //     timeout: 0,
-    //     divider: "",
-    //     // or 'ajax'
-    //     type: 'static'
+    $(document).ready(function () {
+      $("#tckr").eocjsNewsticker({
+        // animation speed
+        speed: 20,
+        timeout: 0,
+        divider: "",
+        // or 'ajax'
+        type: 'static'
 
-    //   });
-    // });
+      });
+    });
 
   </script>
 </head>
 
 <body>
   <!-- navbar -->
-  <div class="container-fluid fixed-top bg-light">
 
-    <div class="row collapse show no-gutters d-flex h-100 position-relative">
+  <div class="container-fluid fixed-top bg-light">
+    <div class="fixed-top">
+      <div id="tckr" class="tckr">MORE BUTTER TO COME ONLINE SOON!</div>
+    </div>
+    <div class="row collapse show no-gutters d-flex h-100 position-relative" style="z-index: 1040;">
 
       <div class="col-3 px-0 w-sidebar navbar-collapse collapse d-none d-md-flex">
         <!-- spacer col -->
@@ -53,21 +56,32 @@
           </a>
         </div>
       </div>
-      <div class="col ">
-        <div id="tckr" class="tckr">MORE BUTTER TO COME ONLINE SOON!</div>
-      </div>
+   
     </div>
   </div>
   <!-- content -->
   <div class="container-fluid px-0 h-100">
     <div class="row min-vh-100 collapse show no-gutters d-flex h-100 position-relative">
-      
       <div class="col-3 p-0 h-100 text-black w-sidebar navbar-collapse collapse d-none d-md-flex sidebar">
         <!-- fixed sidebar -->
         <div class="navbar-light bg-light sticky-top h-100 w-sidebar">
           <h6 class="px-3 pt-3"> asdf</h6>
           <ul class="nav flex-column flex-nowrap text-truncate">
             <li class="nav-item">
+            </li>
+          </ul>
+      
+          <ul class="nav flex-column flex-nowrap text-truncate navbar-bottom">
+            <li class="nav-item">
+              <a class="nav-link project-link font-italic" href="index.html">butter</a>
+              <a class="nav-link project-link font-italic" href="projects.html">projects</a>
+              <a class="nav-link project-link font-italic" href="#">ABOUT</a>
+              <a class="nav-link project-link font-italic" href="mailto:butter@butter.com">contact</a>
+              <a class="nav-link project-link font-italic" href="impressum.html">impressum</a>
+              <div>
+                <a class="nav-link fa fa-instagram" style="color:black;" href="https://www.instagram.com/buero.butter/"></a>
+                <a class="nav-link fa fa-facebook" style="color:black;" href="https://www.facebook.com/buerobutter"></a>
+              </div>
             </li>
           </ul>
         </div>

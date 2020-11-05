@@ -13,6 +13,8 @@
     integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
     crossorigin="anonymous"></script>
   <script src="eocjs/eocjs-newsticker.js"></script>
+  <script src="https://kit.fontawesome.com/73ae10318d.js" crossorigin="anonymous"></script>
+
   <link rel="stylesheet" href="eocjs/eocjs-newsticker.css" />
   <script>
     $(document).ready(function () {
@@ -29,13 +31,13 @@
     function displayProject(number) {
       let numberOfProjects = 6;
       for (let i = 1; i <= numberOfProjects; i++) {
-        $("#prj"+ i).removeClass("project-link-active");
+        $("#prj" + i).removeClass("project-link-active");
         if (number === i)
           continue;
-        $("#car"+ i).css({ "display": "none" });
+        $("#car" + i).css({ "display": "none" });
       }
-      $("#car"+ number).css({ "display": "block" });
-      $("#prj"+ number).addClass("project-link-active");
+      $("#car" + number).css({ "display": "block" });
+      $("#prj" + number).addClass("project-link-active");
     }
   </script>
 </head>
@@ -44,8 +46,10 @@
 
   <!-- navbar -->
   <div class="container-fluid fixed-top bg-light">
-
-    <div class="row collapse show no-gutters d-flex h-100 position-relative">
+    <div class="fixed-top">
+      <div id="tckr" class="tckr">MORE BUTTER TO COME ONLINE SOON!</div>
+    </div>
+    <div class="row collapse show no-gutters d-flex h-100 position-relative" style="z-index: 1040;">
 
       <div class="col-3 px-0 w-sidebar navbar-collapse collapse d-none d-md-flex">
 
@@ -64,13 +68,10 @@
           </a>
         </div>
       </div>
-      <div class="col ">
-        <div id="tckr" class="tckr">MORE BUTTER TO COME ONLINE SOON!</div>
-      </div>
     </div>
   </div>
   <!-- content -->
-  <div class="container-fluid px-0 h-100">
+  <div class="container-fluid px-0 h-100" >
     <div class="row min-vh-100 collapse show no-gutters d-flex h-100 position-relative bg-dark">
       <div class="col-3 p-0 h-100 text-black w-sidebar navbar-collapse collapse d-none d-md-flex sidebar">
         <!-- fixed sidebar -->
@@ -78,7 +79,8 @@
           <h6 class="px-3 pt-3">projects</h6>
           <ul class="nav flex-column flex-nowrap text-truncate">
             <li class="nav-item">
-              <a id="prj1" class="nav-link project-link project-link-active" href="#" onclick="displayProject(1)">neunerhaus</a>
+              <a id="prj1" class="nav-link project-link project-link-active" href="#"
+                onclick="displayProject(1)">neunerhaus</a>
             </li>
             <li class="nav-item">
               <a id="prj2" class="nav-link project-link" href="#" onclick="displayProject(2)">pffv</a>
@@ -90,16 +92,31 @@
               <a id="prj4" class="nav-link project-link" href="#" onclick="displayProject(4)">waterdrop</a>
             </li>
             <li class="nav-item">
-              <a id="prj5" class="nav-link project-link" href="#"" onclick="displayProject(5)">manufakt eins</a>
+              <a id="prj5" class="nav-link project-link" href="#"" onclick=" displayProject(5)">manufakt eins</a>
             </li>
             <li class="nav-item">
               <a id="prj6" class="nav-link project-link" href="#" onclick="displayProject(6)">project sechs</a>
             </li>
           </ul>
+
+          <ul class="nav flex-column flex-nowrap text-truncate navbar-bottom">
+            <li class="nav-item">
+              <a class="nav-link project-link font-italic" href="index.html" >butter</a>
+              <a class="nav-link project-link font-italic" href="#" >PROJECTS</a>
+              <a class="nav-link project-link font-italic" href="about.html" >about</a>
+              <a class="nav-link project-link font-italic" href="mailto:butter@butter.com" >contact</a>
+              <a class="nav-link project-link font-italic" href="impressum.html" >impressum</a>
+              <div>
+                <a class="nav-link fa fa-instagram" style="color:black;" href="https://www.instagram.com/buero.butter/"></a>
+                <a class="nav-link fa fa-facebook" style="color:black;" href="https://www.facebook.com/buerobutter"></a>
+              </div>
+            </li>
+          </ul>
         </div>
+
       </div>
 
-      <div id="car1" class="col content-right my-auto">
+      <div id="car1" class="col my-auto" >
         <div id="carouselExampleControls" class="carousel slide" data-interval="false">
           <!-- project 1  -->
           <div class="carousel-inner">

@@ -1,8 +1,12 @@
-
 .tckr {
-  background-color: transparent!important;
+  background-color: transparent !important;
   color: red;
-  font-weight: bold;
+  font-family: gtsectra;
+  font-size: xx-large;
+}
+@font-face {
+  font-family: "gtsectra";
+  src: url('GT-Sectra-Fine-Bold-Italic.ttf');
 }
 .center-main {
   display: flex;
@@ -10,6 +14,7 @@
   align-items: center;
   /* height: 100vh; */
 }
+
 /* sidebar */
 body {
   height: 100vh;
@@ -75,3 +80,24 @@ body {
   }
 
 }
+
+/* bottom left navbar */
+
+.navbar-bottom {
+  position: fixed;
+  bottom: 0;
+}
+
+/* hyper links black + active italic */
+.project-link {
+  color: black;
+}
+
+.project-link:hover {
+  color: black;
+}
+
+.project-link-active {
+  font-style: italic;
+}
+

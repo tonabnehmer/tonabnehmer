@@ -511,7 +511,12 @@ html, body{
   border-radius: 0px;
 }
 .tckr {
-  background-color: transparent!important;
+  background-color: transparent !important;
   color: red;
-  font-weight: bold;
+  font-family: gtsectra;
+  font-size: xx-large;
+}
+@font-face {
+  font-family: "gtsectra";
+  src: url('GT-Sectra-Fine-Bold-Italic.ttf');
 }
