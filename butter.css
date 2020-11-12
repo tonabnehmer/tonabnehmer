@@ -337,12 +337,11 @@ ul li {
   }
 } */
 
-
 .prj {
   position: absolute;
   background-color: white;
   height: auto;
-  font-size: 20px;
+  line-height: 26px;
   align-items: center;
   left: 100px;
   color: black;

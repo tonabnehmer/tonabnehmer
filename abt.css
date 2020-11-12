@@ -43,7 +43,6 @@ body {
   transition: all .15s linear;
 }
 
-@media (max-width:768px) {
 
   .row.collapse,
   .row.collapsing {
@@ -78,8 +77,6 @@ body {
     z-index: 1050;
     min-width: initial;
   }
-
-}
 
 /* bottom left navbar */
 
