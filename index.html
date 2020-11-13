@@ -103,49 +103,48 @@
             }
         }
         var resized = false;
-        function quAnim(object, color) {
-            if (resized) {
-                resized = false;
-                object = [];
-                return;
-            }
-            if (object.length == 0) {
-                mailAnim(color == "red" ? "black" : "red");
-                console.log("here");
-                return;
-            }
-            for (let i = 0; i < 3; i++) {
-                let o = object.shift();
-                if (i == 2) {
-                    o.animate({ "border-color": "red" }, 500);
-                    o.animate({ "border-color": "black" }, 1000, function () { quAnim(object, color); });
-                } else {
-                    o.animate({ "border-color": "red" }, 500);
-                    o.animate({ "border-color": "black" }, 1000);
-                }
-            }
+        // function quAnim(object, color) {
+        //     if (resized) {
+        //         resized = false;
+        //         object = [];
+        //         return;
+        //     }
+        //     if (object.length == 0) {
+        //         mailAnim(color == "red" ? "black" : "red");
+        //         return;
+        //     }
+        //     for (let i = 0; i < 3; i++) {
+        //         let o = object.shift();
+        //         if (i == 2) {
+        //             o.animate({ "border-color": "red" }, 500);
+        //             o.animate({ "border-color": "black" }, 1000, function () { quAnim(object, color); });
+        //         } else {
+        //             o.animate({ "border-color": "red" }, 500);
+        //             o.animate({ "border-color": "black" }, 1000);
+        //         }
+        //     }
             
-            // object.shift().animate({ "border-color": "red" }, 500)
-            // object.shift().animate({ "border-color": "red" }, 500)
-            // object.shift().animate({ "border-color": color }, 500, function () { quAnim(object, color); })
-        }
+        //     // object.shift().animate({ "border-color": "red" }, 500)
+        //     // object.shift().animate({ "border-color": "red" }, 500)
+        //     // object.shift().animate({ "border-color": color }, 500, function () { quAnim(object, color); })
+        // }
 
-        function mailStop() {
-            resized = true;
-            $("#1-1 > div").find("*").each(function () {
-                $(this).stop(true, true);
-                $(this).css({ "border-color": "black" });
-            });
-        }
-        function mailAnim(color) {
-            var inc = 1000;
-            var t = 0;
-            var tr = [];
-            $("#1-1 > div").find("*").each(function () {
-                tr.push($(this));
-            });
-            quAnim(tr, color)
-        }
+        // function mailStop() {
+        //     resized = true;
+        //     $("#1-1 > div").find("*").each(function () {
+        //         $(this).stop(true, true);
+        //         $(this).css({ "border-color": "black" });
+        //     });
+        // }
+        // function mailAnim(color) {
+        //     var inc = 1000;
+        //     var t = 0;
+        //     var tr = [];
+        //     $("#1-1 > div").find("*").each(function () {
+        //         tr.push($(this));
+        //     });
+        //     quAnim(tr, color)
+        // }
 
         $(document).ready(function () {
             $("#tckr").eocjsNewsticker({
@@ -167,12 +166,12 @@
             genHalfRects("#21-7", "#21-10");
             genHalfRects("#3-8", "#3-11");
             prj2anim();
-            mailAnim("red");
+            // mailAnim("red");
         });
 
         $(window).on('resize', function () {
-            mailStop();
-            mailAnim("red");
+            // mailStop();
+            // mailAnim("red");
             generateRectangle("#1-1");
             generateRectangle("#1-6");
             generateRectangle("#2-1");
