@@ -71,28 +71,6 @@
             }
         }
         
-        function prj2anim() {
-            if (parseInt($("#prj1").css("top")) + 60 > $("#1-2").height()) {
-                $("#prj1").css("top", "0px");
-                $("#prj1").css("left", -$("#prj1").width());
-                $("#prj1").animate({ left: $("#prj1").parent().width() }, 5500, "linear", function () { prj2anim(); });
-            } else {
-                $("#prj1").css("top", parseInt($("#prj1").css("top")) + 30);
-                $("#prj1").css("left", -$("#prj1").width());
-                $("#prj1").animate({ left: $("#prj1").parent().width() }, 5500, "linear", function () { prj2anim(); });
-            }
-        }
-        function prjAnim() {
-            let dlys = [0,1000,800,200];
-            let top = [20, 90, 140, 190];
-            let spd = [5500, 6000, 5500, 7500];
-            for (let index = 0; index < dlys.length; index++) {
-                const element = dlys[index];
-                $("#prj" + index).css("top", top[index]);
-                $("#prj" + index).css("left", -$("#prj" + index).width());
-                $("#prj" + index).delay(element).animate({ left: $("#prj" + index).parent().width() }, spd[index], "linear", function () { prjAnim(); });
-            }
-        }
         function ply() {
             if ($("#vid").get(0).paused) {
                 $("#vid").trigger('play');
@@ -174,8 +152,6 @@
             genHalfRects("#21-6", "#21-9");
             genHalfRects("#21-7", "#21-10");
             genHalfRects("#3-8", "#3-11");
-            // prj2anim();
-            // prjAnim();
             mailAnim("red");
 
             //vid

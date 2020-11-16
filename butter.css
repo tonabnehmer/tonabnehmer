@@ -129,7 +129,7 @@ html, body{
   src: url('GT-Sectra-Fine-Bold-Italic.ttf');
 }
 
-@keyframes changewidth {
+@keyframes changeLeftPrj {
   from {
     left: -110px;
   }
@@ -141,28 +141,31 @@ html, body{
 
 .prj0a {
   animation-duration: 4.6s;
-  animation-name: changewidth;
+  animation-name: changeLeftPrj;
   animation-iteration-count: infinite;
   animation-direction: normal;
   animation-delay: 0.2s;
+  animation-timing-function: linear;
 }
 .prj0b {
   animation-duration: 3.6s;
-  animation-name: changewidth;
+  animation-name: changeLeftPrj;
   animation-iteration-count: infinite;
   animation-direction: normal;
   animation-delay: 0.0s;
+  animation-timing-function: linear;
 }
 .prj0c {
   animation-duration: 6.6s;
-  animation-name: changewidth;
+  animation-name: changeLeftPrj;
   animation-iteration-count: infinite;
   animation-direction: normal;
   animation-delay: 1.0s;
+  animation-timing-function: linear;
 }
 .prj0d {
   animation-duration: 8.6s;
-  animation-name: changewidth;
+  animation-name: changeLeftPrj;
   animation-iteration-count: infinite;
   animation-direction: normal;
   animation-delay: 0.5s;
