@@ -1,0 +1,23 @@
+about:  
+- text region padding top 10% desktop, 25% mobile
+- NICHT WICHTIG: silbentrennung???
+- padding wirkt sich auf navbar aus (links unten)
+- nav-link padding 0.2rem
+- navbar white 
+- navbar wie projects 
+
+project:  
+- !!! navbar white
+- insta/fb link padding 0, bzw insta 0.5rem
+- impressum weg
+- email auf office@buerobutter.com
+- carousel auf 4 sekunden
+
+butter:     
+- !!!gruen bitte lt. stefan #00BC70
+- !!!blau bitte lt. stefan #008FBE
+- NICHT WICHTIG: projects an verschiedenen stellen, verschieden schnell und mit delay ODER
+- !!!! projcets links oben, genau 3 zeilen hoch, mit 5px abstand links und rechts
+- !!!!!!!! about: text in BUTTER, grosz wie moeglich. bold, lausanne
+- !!!!!!!! projects: lausanne text
+- play/pause wenn laeuft rot sonst gruen, nie schwarz

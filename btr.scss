@@ -1,0 +1,409 @@
+$maxRectEles: 15;
+$eleGrow: 20;
+$eleMarginGrow: 10;
+$eleWidth: 5px;
+$eleGrowR: 40;
+$eleMarginGrowR: 20;
+$eleWidthR: 10px;
+$rfCol: black;
+$lfCol: black;
+$eleCol: black;
+$lfBtmCol: black; 
+$rfBtmCol: black; 
+$horzCol: black;
+$vertCol: black;
+$abtCol: #00bc70;
+$projCol: #008fbe;
+$marginD: 5px;
+$marginR: 10px;
+
+//rectangles
+  // -2px for rounding error (top and bottom) mgn top -1px for rounding error
+@for $i from 0 through $maxRectEles {
+  $hgt: 0;  
+  @if $i != 0 {
+      $hgt: 10 +  $i * $eleGrow - 2;
+  }
+  $mgntp: 0;  
+  @if $i != 0 {
+      $mgntp: 5 +  $i * $eleMarginGrow - 1;
+  }
+  .rf-vr-#{$i+1} {
+        position: absolute;
+        border-right: $eleWidth solid $rfCol;
+        height: calc(100% - #{$hgt}px);
+        width: 100%;
+        margin-top: $mgntp + px;
+        margin-left: 0px - $i * $eleMarginGrow;
+  }
+  .lf-vr-#{$i+1} {
+    position: absolute;
+    border-left: $eleWidth solid $lfCol;
+    height: calc(100% - #{$hgt}px);
+    width: 100%;
+    margin-left: 0px + $i * $eleMarginGrow;
+    margin-top: $mgntp + px;
+  }
+  .lf-hr-#{$i+1} {
+  position: absolute;
+  border-bottom: $eleWidth solid$eleCol;
+  border-top: $eleWidth solid $eleCol;
+  height: calc(100% - #{$i * $eleGrow}px);
+  width: calc(100% - #{$i * $eleGrow}px);
+  margin-top: 0px + $i * $eleMarginGrow;
+  margin-left: 0px + $i * $eleMarginGrow;
+}
+// responsive
+// @media only screen and (min-width: 300px) and (max-width: 768px) {
+//   $hgt: 0;  
+//   @if $i != 0 {
+//       $hgt: 10 +  $i * $eleGrowR - 2;
+//   }
+//   $mgntp: 0;  
+//   @if $i != 0 {
+//       $mgntp: 5 +  $i * $eleMarginGrowR - 1;
+//   }
+//   .rf-vr-#{$i+1} {
+//         position: absolute;
+//         border-right: $eleWidthR solid $rfCol;
+//         height: calc(100% - #{$hgt}px);
+//         width: 100%;
+//         margin-top: $mgntp + px;
+//         margin-left: 0px - $i * $eleMarginGrowR;
+//   }
+//   .lf-vr-#{$i+1} {
+//     position: absolute;
+//     border-left: $eleWidthR solid $lfCol;
+//     height: calc(100% - #{$hgt}px);
+//     width: 100%;
+//     margin-left: 0px + $i * $eleMarginGrowR;
+//     margin-top: $mgntp + px;
+//   }
+//   .lf-hr-#{$i+1} {
+//   position: absolute;
+//   border-bottom: $eleWidthR solid$eleCol;
+//   border-top: $eleWidthR solid $eleCol;
+//   height: calc(100% - #{$i * $eleGrowR}px);
+//   width: calc(100% - #{$i * $eleGrowR}px);
+//   margin-top: 0px + $i * $eleMarginGrowR;
+//   margin-left: 0px + $i * $eleMarginGrowR;
+// }
+// }
+}
+// horizontal and vertical eles
+$halfGrowLf: 10;
+$halfGrowLfR: 20;
+
+// - 1 px for rounding errors in the calc() algo
+@for $i from 0 through $maxRectEles {
+  $tmp: 5 + $i * $halfGrowLf - 1;
+  $tmpR: 5 + $i * $halfGrowLfR - 1;
+  .lf-half-top-vr-#{$i+1} {
+        position: absolute;
+        border-left: $eleWidth solid $lfCol;
+        height: calc(100% - #{$tmp}px);
+        width: 100%;
+        margin-top: $eleWidth + $i * $halfGrowLf - 1;
+        margin-left: 0px + $i * $halfGrowLf;
+      }
+      // @media only screen and (min-width: 300px) and (max-width: 768px) {
+      //   .lf-half-top-vr-#{$i+1} {
+      //     position: absolute;
+      //     border-left: $eleWidthR solid $lfCol;
+      //     height: calc(100% - #{$tmpR}px);
+      //     width: 100%;
+      //     margin-top: $eleWidthR + $i * $halfGrowLfR - 1;
+      //     margin-left: 0px + $i * $halfGrowLfR;
+      //   }
+      // }
+}
+// - 1 px for rounding errors in the calc() algo
+@for $i from 0 through $maxRectEles {
+  $tmp: 5 + $i * $halfGrowLf - 1;
+  .lf-half-bottom-vr-#{$i+1} {
+    position: absolute;
+    border-left: $eleWidth solid $lfBtmCol;
+    height: calc(100% - #{$tmp}px);
+    width: 100%;
+    margin-left: 0px + $i * $halfGrowLf;
+  }
+}
+
+// - 1 px for rounding errors in the calc() algo
+@for $i from 0 through $maxRectEles {
+  $tmp: 5 + $i * $halfGrowLf - 1;
+  .rf-half-top-vr-#{$i+1} {
+    position: absolute;
+    border-right: $eleWidth solid $rfCol;
+    height: calc(100% - #{$tmp}px);
+    width: 100%;
+    margin-top: $eleWidth + $i * $halfGrowLf - 1;
+    margin-left: 0px - $i * $halfGrowLf;
+  }
+}
+// - 1 px for rounding errors in the calc() algo
+@for $i from 0 through $maxRectEles {
+  $tmp: 5 + $i * $halfGrowLf - 1;
+  .rf-half-bottom-vr-#{$i+1} {
+    position: absolute;
+    border-right: $eleWidth solid $rfBtmCol;
+    height: calc(100% - #{$tmp}px);
+    width: 100%;
+    margin-left: 0px - $i * $halfGrowLf;
+  }
+}
+
+@for $i from 0 through $maxRectEles {
+  $tmp: 0;  
+  @if $i != 0 {
+      $tmp: 0 +  $i * $eleGrow;
+  }
+  .bottom-hr-#{$i+1} {
+    position: absolute;
+    border-bottom: $eleWidth solid $eleCol;
+    height: calc(100% - #{$tmp}px);
+    width: calc(100% - #{$tmp}px);
+    margin-top: 0px + $i * $halfGrowLf;
+    margin-left: 0px + $i * $halfGrowLf;
+  }
+}
+
+@for $i from 0 through $maxRectEles {
+  $tmp: 0;  
+  @if $i != 0 {
+      $tmp: 0 +  $i * $eleGrow;
+  }
+  .top-hr-#{$i+1} {
+    position: absolute;
+    border-top: $eleWidth solid $eleCol;
+    height: calc(100% - #{$tmp}px);
+    width: calc(100% - #{$tmp}px);
+    margin-top: 0px + $i * $halfGrowLf;
+    margin-left: 0px + $i * $halfGrowLf;
+  }
+}
+// desktop
+.nwhorz-prj {
+  width: 100%;
+  height: $eleWidth;
+  background: $projCol;
+  margin-bottom: $eleWidth;
+}
+.nwhorz-prj-end {
+  width: 100%;
+  height: $eleWidth;
+  background: $projCol;
+}
+.BUTTER {
+  border-color: $abtCol;
+}
+.nwhorz-b {
+  width: 100%;
+  height: $eleWidth;
+  background: $horzCol;
+  margin-bottom: $eleWidth;
+}
+.nwhorz-end {
+  width: 100%;
+  height: $eleWidth;
+  background: $horzCol;
+}
+.nwhorz-start {
+  width: 100%;
+  height: $eleWidth;
+  background: $horzCol;
+  margin-top: $eleWidth;
+  margin-bottom: $eleWidth;
+}
+
+.nwvert-r {
+  height: 100%;
+  width: $eleWidth;
+  background: $vertCol;
+  margin-right: $eleWidth;
+}
+.nwvert-r-1 {
+  height: 100%;
+  width: $eleWidth;
+  background: $vertCol;
+  margin-right: $eleWidth;
+}
+.nwvert-r-2 {
+  height: 100%;
+  width: $eleWidth;
+  background: $vertCol;
+  margin-right: $eleWidth;
+}
+.nwvert-r-3 {
+  height: 100%;
+  width: $eleWidth;
+  background: $vertCol;
+  margin-right: $eleWidth;
+}
+.nwvert-end {
+  height: 100%;
+  width: $eleWidth;
+  background: $vertCol;
+}
+.nwvert-start {
+  height: 100%;
+  width: $eleWidth;
+  background: $vertCol;
+  margin-right: $eleWidth;
+  margin-left: $eleWidth;
+}
+// resposnive 
+// @media only screen and (min-width: 300px) and (max-width: 768px) {
+//   .nwhorz-prj {
+//     width: 100%;
+//     height: $eleWidthR;
+//     background: $projCol;
+//     margin-bottom: $eleWidthR;
+//   }
+//   .nwhorz-prj-end {
+//     width: 100%;
+//     height: $eleWidthR;
+//     background: $projCol;
+//   }
+//   .nwhorz-b {
+//     width: 100%;
+//     height: $eleWidthR;
+//     background: $horzCol;
+//     margin-bottom: $eleWidthR;
+//   }
+//   .nwhorz-end {
+//     width: 100%;
+//     height: $eleWidthR;
+//     background: $horzCol;
+//   }
+//   .nwhorz-start {
+//     width: 100%;
+//     height: $eleWidthR;
+//     background: $horzCol;
+//     margin-top: $eleWidthR;
+//     margin-bottom: $eleWidthR;
+//   }
+  
+//   .nwvert-r {
+//     height: 100%;
+//     width: $eleWidthR;
+//     background: $vertCol;
+//     margin-right: $eleWidthR;
+//   }
+//   .nwvert-r-1 {
+//     height: 100%;
+//     width: $eleWidthR;
+//     background: $vertCol;
+//     margin-right: $eleWidthR;
+//   }
+//   .nwvert-r-2 {
+//     height: 100%;
+//     width: $eleWidthR;
+//     background: $vertCol;
+//     margin-right: $eleWidthR;
+//   }
+//   .nwvert-r-3 {
+//     height: 100%;
+//     width: $eleWidthR;
+//     background: $vertCol;
+//     margin-right: $eleWidthR;
+//   }
+//   .nwvert-end {
+//     height: 100%;
+//     width: $eleWidthR;
+//     background: $vertCol;
+//   }
+//   .nwvert-start {
+//     height: 100%;
+//     width: $eleWidthR;
+//     background: $vertCol;
+//     margin-right: $eleWidthR;
+//     margin-left: $eleWidthR;
+//   }
+// }
+// margins
+
+.mgn-t {
+  margin-top: $marginD;
+}
+.mgn-r {
+  margin-right: $marginD;
+}
+.mgn-l {
+  margin-left: $marginD;
+}
+.mgn-b {
+  margin-bottom: $marginD;
+}
+.mgn-x {
+  margin-left: $marginD;
+  margin-right: $marginD;
+}
+.mgn-y {
+  margin-top: $marginD;
+  margin-bottom: $marginD;
+}
+// responsive margins
+// @media only screen and (min-width: 300px) and (max-width: 768px) {
+//   .mgn-t {
+//     margin-top: $marginR;
+//   }
+//   .mgn-r {
+//     margin-right: $marginR;
+//   }
+//   .mgn-l {
+//     margin-left: $marginR;
+//   }
+//   .mgn-b {
+//     margin-bottom: $marginR;
+//   }
+//   .mgn-x {
+//     margin-left: $marginR;
+//     margin-right: $marginR;
+//   }
+//   .mgn-y {
+//     margin-top: $marginR;
+//     margin-bottom: $marginR;
+//   }
+// }
+// media queries ************
+// reducing second column, if third moves in too close
+$startOfReducing: 1545px;
+$threeColsSize: 1260px; 
+@for $i from 0 through 10 {
+  .nwvert-r-snd-#{$i+1} {
+    height: 100%;
+    width: $eleWidth;
+    background: $vertCol;
+    margin-right: $eleWidth;
+  }
+  @media only screen and (min-width: $threeColsSize) and (max-width: $startOfReducing) {
+    .nwvert-r-snd-#{$i+1} {
+      display: none !important;
+      // background: $vertCol;
+    }
+  }
+  @if $i < 4 {
+    @media only screen and (max-width: 475px){
+      .nwvert-r-snd-#{$i+1} {
+        display: none !important;
+        // background: $vertCol;
+      }
+    }
+  }
+  
+  $startOfReducing: $startOfReducing - $eleWidth * 6;
+}
+// column layout
+.columns-sz { 
+  height: 650px; 
+  min-width: 475px; 
+  max-width: 515px;
+}
+// @media only screen and (min-width: 300px) and (max-width: 768px) {
+//   .columns-sz { 
+//     height: 1300px; 
+//     min-width: 830px; 
+//     max-width: 1030px;
+//   }
+// }

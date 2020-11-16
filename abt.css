@@ -2,7 +2,7 @@
   background-color: transparent !important;
   color: red;
   font-family: gtsectra;
-  font-size: xx-large;
+  font-size: xxx-large;
 }
 @font-face {
   font-family: "gtsectra";
@@ -81,8 +81,10 @@ body {
 /* bottom left navbar */
 
 .navbar-bottom {
-  position: fixed;
+  position: absolute;
   bottom: 0;
+  width: 100%;
+  z-index: 10;
 }
 
 /* hyper links black + active italic */
@@ -98,3 +100,7 @@ body {
   font-style: italic;
 }
 
+.btr-txt {
+  line-height: 1.4rem;
+  font-size: 1.2rem;
+}

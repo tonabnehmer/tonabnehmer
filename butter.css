@@ -12,9 +12,11 @@
   height: auto;
   line-height: 26px;
   align-items: center;
-  left: 100px;
-  color: black;
+  left: -110px;
+  color: #008fbe;
   font-weight: bold;
+  width: 6.3rem;
+  text-align: center
 }
 
 /* if screen is smaller than a certain width (960px, with 415min width of each column), we hide a few vertical elements */
@@ -120,9 +122,49 @@ html, body{
   background-color: transparent !important;
   color: red;
   font-family: gtsectra;
-  font-size: xx-large;
+  font-size: xxx-large;
 }
 @font-face {
   font-family: "gtsectra";
   src: url('GT-Sectra-Fine-Bold-Italic.ttf');
+}
+
+@keyframes changewidth {
+  from {
+    left: -110px;
+  }
+
+  to {
+    left: 350px;
+  }
+}
+
+.prj0a {
+  animation-duration: 4.6s;
+  animation-name: changewidth;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-delay: 0.2s;
+}
+.prj0b {
+  animation-duration: 3.6s;
+  animation-name: changewidth;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-delay: 0.0s;
+}
+.prj0c {
+  animation-duration: 6.6s;
+  animation-name: changewidth;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-delay: 1.0s;
+}
+.prj0d {
+  animation-duration: 8.6s;
+  animation-name: changewidth;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-delay: 0.5s;
+  animation-timing-function: linear;
 }
