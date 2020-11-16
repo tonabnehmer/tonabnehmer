@@ -407,3 +407,13 @@ $threeColsSize: 1260px;
 //     max-width: 1030px;
 //   }
 // }
+
+.abt-txt {
+  color: $abtCol;
+  text-decoration: none;
+  font-weight: bold;
+}
+.abt-txt:hover {
+  text-decoration: none;
+  color: $abtCol;
+}

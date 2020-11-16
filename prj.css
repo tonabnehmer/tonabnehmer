@@ -134,6 +134,12 @@ body {
   background-repeat: no-repeat;
 }
 
+.prj12 {
+  background: url(projects/quer/1_transition/butter_transition_2.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
 .prj21 {
   background: url("projects/quer/2_neunerhaus/butter_neunerhaus.jpg");
   background-size: cover;

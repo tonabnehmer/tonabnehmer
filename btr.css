@@ -1556,4 +1556,15 @@
   min-width: 475px;
   max-width: 515px;
 }
+
+.abt-txt {
+  color: #00bc70;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.abt-txt:hover {
+  text-decoration: none;
+  color: #00bc70;
+}
 /*# sourceMappingURL=btr.css.map */
