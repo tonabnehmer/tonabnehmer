@@ -192,10 +192,10 @@ html, body{
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  width: 75px;
-  height: 52px;
-  top: 41px;
-  left: 40px;
+  width: 65px;
+  height: 45px;
+  top: 45px;
+  left: 45px;
   position: absolute;
   display: none;
 }
