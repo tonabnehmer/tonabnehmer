@@ -100,20 +100,20 @@
                 mailAnim(color == "red" ? "black" : "red");
                 return;
             }
-            if(object.length == 4) {
-                for (let i = 0; i < 3; i++) {
-                    let o = object.shift();
-                    if (i == 2) {
-                        o.animate({ "border-color": "red" }, 300);
-                        o.animate({ "border-color": "black" },550, function () { quAnim(object, color); });
-                        object.shift().fadeIn(1500, function () { $(this).fadeOut(1500) });
-                    } else {
-                        o.animate({ "border-color": "red" }, 300);
-                        o.animate({ "border-color": "black" },550);
-                    }
-                }
-                return;
-            }
+            // if(object.length == 4) {
+            //     for (let i = 0; i < 3; i++) {
+            //         let o = object.shift();
+            //         if (i == 2) {
+            //             o.animate({ "border-color": "red" }, 300);
+            //             o.animate({ "border-color": "black" },550, function () { quAnim(object, color); });
+            //             // object.shift().fadeIn(1500, function () { $(this).fadeOut(1500) });
+            //         } else {
+            //             o.animate({ "border-color": "red" }, 300);
+            //             o.animate({ "border-color": "black" },550);
+            //         }
+            //     }
+            //     return;
+            // }
             for (let i = 0; i < 3; i++) {
                 let o = object.shift();
                 if (i == 2) {
@@ -144,7 +144,7 @@
             $("#1-1 > div").find("*").each(function () {
                 tr.push($(this));
             });
-            tr.push($("#mailic"));
+            // tr.push($("#mailic"));
             quAnim(tr, color)
         }
 
