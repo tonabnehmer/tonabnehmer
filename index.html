@@ -100,6 +100,20 @@
                 mailAnim(color == "red" ? "black" : "red");
                 return;
             }
+            if(object.length == 4) {
+                for (let i = 0; i < 3; i++) {
+                    let o = object.shift();
+                    if (i == 2) {
+                        o.animate({ "border-color": "red" }, 500);
+                        o.animate({ "border-color": "black" }, 1000, function () { quAnim(object, color); });
+                        object.shift().fadeIn(500, function () { $(this).fadeOut(1000) });
+                    } else {
+                        o.animate({ "border-color": "red" }, 500);
+                        o.animate({ "border-color": "black" }, 1000);
+                    }
+                }
+                return;
+            }
             for (let i = 0; i < 3; i++) {
                 let o = object.shift();
                 if (i == 2) {
@@ -130,6 +144,7 @@
             $("#1-1 > div").find("*").each(function () {
                 tr.push($(this));
             });
+            tr.push($("#mailic"));
             quAnim(tr, color)
         }
 
@@ -144,7 +159,7 @@
                 type: 'static'
 
             });
-            generateRectangle("#1-1");
+            // generateRectangle("#1-1");
             generateRectangle("#1-6");
             generateRectangle("#2-1");
             generateRectangle("#21-11", "BUTTER");
@@ -168,7 +183,7 @@
         $(window).on('resize', function () {
             mailStop();
             mailAnim("red");
-            generateRectangle("#1-1");
+            // generateRectangle("#1-1");
             generateRectangle("#1-6");
             generateRectangle("#2-1");
             generateRectangle("#21-11", "BUTTER");
@@ -195,7 +210,7 @@
                     <div id="1-1" class="d-flex flex-row" style="min-width: 100%; min-height: 135px; height: 30%;">
                         <!-- full rectangle -->
                         <div class="root-container">
-                            <!-- <div class="lf-vr-1"></div>
+                            <div class="lf-vr-1"></div>
                             <div class="lf-hr-1"></div>
                             <div class="rf-vr-1"></div>
                             <div class="lf-vr-2"></div>
@@ -209,7 +224,7 @@
                             <div class="rf-vr-4"></div>
                             <div class="lf-vr-5"></div>
                             <div class="lf-hr-5"></div>
-                            <div class="rf-vr-5"></div> -->
+                            <div class="rf-vr-5"></div>
                             <!-- <div class="diag-l"></div> -->
                             <!-- <div class="diag-r"></div> -->
                             <!-- <div class="cnter">
@@ -218,6 +233,8 @@
                                 </div>
                             </div> -->
                         </div>
+                        <div id="mailic" class="mailic"></div>
+
                         <a class="stretched-link" href="mailto:office@buerobutter.com"></a>
                     </div>
                     <div id="1-3" class="d-flex flex-grow-1 mgn-t" style="height: 70%;">

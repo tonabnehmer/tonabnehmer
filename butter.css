@@ -187,3 +187,15 @@ html, body{
   animation-delay: 0.5s;
   animation-timing-function: linear;
 }
+.mailic{
+  background: url("mail.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 75px;
+  height: 52px;
+  top: 41px;
+  left: 40px;
+  position: absolute;
+  display: none;
+}
