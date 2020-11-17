@@ -104,12 +104,12 @@
                 for (let i = 0; i < 3; i++) {
                     let o = object.shift();
                     if (i == 2) {
-                        o.animate({ "border-color": "red" }, 500);
-                        o.animate({ "border-color": "black" }, 1000, function () { quAnim(object, color); });
-                        object.shift().fadeIn(500, function () { $(this).fadeOut(1000) });
+                        o.animate({ "border-color": "red" }, 250);
+                        o.animate({ "border-color": "black" }, 500, function () { quAnim(object, color); });
+                        object.shift().fadeIn(1500, function () { $(this).fadeOut(1500) });
                     } else {
-                        o.animate({ "border-color": "red" }, 500);
-                        o.animate({ "border-color": "black" }, 1000);
+                        o.animate({ "border-color": "red" }, 250);
+                        o.animate({ "border-color": "black" }, 500);
                     }
                 }
                 return;
@@ -117,11 +117,11 @@
             for (let i = 0; i < 3; i++) {
                 let o = object.shift();
                 if (i == 2) {
-                    o.animate({ "border-color": "red" }, 500);
-                    o.animate({ "border-color": "black" }, 1000, function () { quAnim(object, color); });
+                    o.animate({ "border-color": "red" }, 250);
+                    o.animate({ "border-color": "black" }, 500, function () { quAnim(object, color); });
                 } else {
-                    o.animate({ "border-color": "red" }, 500);
-                    o.animate({ "border-color": "black" }, 1000);
+                    o.animate({ "border-color": "red" }, 250);
+                    o.animate({ "border-color": "black" }, 500);
                 }
             }
             
