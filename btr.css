@@ -449,7 +449,7 @@
 .lf-half-top-vr-1 {
   position: absolute;
   border-left: 5px solid black;
-  height: calc(100% - 4px);
+  height: calc(100% - 3px);
   width: 100%;
   margin-top: 4px;
   margin-left: 0px;
@@ -458,7 +458,7 @@
 .lf-half-top-vr-2 {
   position: absolute;
   border-left: 5px solid black;
-  height: calc(100% - 14px);
+  height: calc(100% - 13px);
   width: 100%;
   margin-top: 14px;
   margin-left: 10px;
@@ -467,7 +467,7 @@
 .lf-half-top-vr-3 {
   position: absolute;
   border-left: 5px solid black;
-  height: calc(100% - 24px);
+  height: calc(100% - 23px);
   width: 100%;
   margin-top: 24px;
   margin-left: 20px;
@@ -476,7 +476,7 @@
 .lf-half-top-vr-4 {
   position: absolute;
   border-left: 5px solid black;
-  height: calc(100% - 34px);
+  height: calc(100% - 33px);
   width: 100%;
   margin-top: 34px;
   margin-left: 30px;
@@ -485,7 +485,7 @@
 .lf-half-top-vr-5 {
   position: absolute;
   border-left: 5px solid black;
-  height: calc(100% - 44px);
+  height: calc(100% - 43px);
   width: 100%;
   margin-top: 44px;
   margin-left: 40px;
@@ -494,7 +494,7 @@
 .lf-half-top-vr-6 {
   position: absolute;
   border-left: 5px solid black;
-  height: calc(100% - 54px);
+  height: calc(100% - 53px);
   width: 100%;
   margin-top: 54px;
   margin-left: 50px;
@@ -503,7 +503,7 @@
 .lf-half-top-vr-7 {
   position: absolute;
   border-left: 5px solid black;
-  height: calc(100% - 64px);
+  height: calc(100% - 63px);
   width: 100%;
   margin-top: 64px;
   margin-left: 60px;
@@ -512,7 +512,7 @@
 .lf-half-top-vr-8 {
   position: absolute;
   border-left: 5px solid black;
-  height: calc(100% - 74px);
+  height: calc(100% - 73px);
   width: 100%;
   margin-top: 74px;
   margin-left: 70px;
@@ -521,7 +521,7 @@
 .lf-half-top-vr-9 {
   position: absolute;
   border-left: 5px solid black;
-  height: calc(100% - 84px);
+  height: calc(100% - 83px);
   width: 100%;
   margin-top: 84px;
   margin-left: 80px;
@@ -530,7 +530,7 @@
 .lf-half-top-vr-10 {
   position: absolute;
   border-left: 5px solid black;
-  height: calc(100% - 94px);
+  height: calc(100% - 93px);
   width: 100%;
   margin-top: 94px;
   margin-left: 90px;
@@ -539,7 +539,7 @@
 .lf-half-top-vr-11 {
   position: absolute;
   border-left: 5px solid black;
-  height: calc(100% - 104px);
+  height: calc(100% - 103px);
   width: 100%;
   margin-top: 104px;
   margin-left: 100px;
@@ -548,7 +548,7 @@
 .lf-half-top-vr-12 {
   position: absolute;
   border-left: 5px solid black;
-  height: calc(100% - 114px);
+  height: calc(100% - 113px);
   width: 100%;
   margin-top: 114px;
   margin-left: 110px;
@@ -557,7 +557,7 @@
 .lf-half-top-vr-13 {
   position: absolute;
   border-left: 5px solid black;
-  height: calc(100% - 124px);
+  height: calc(100% - 123px);
   width: 100%;
   margin-top: 124px;
   margin-left: 120px;
@@ -566,7 +566,7 @@
 .lf-half-top-vr-14 {
   position: absolute;
   border-left: 5px solid black;
-  height: calc(100% - 134px);
+  height: calc(100% - 133px);
   width: 100%;
   margin-top: 134px;
   margin-left: 130px;
@@ -575,7 +575,7 @@
 .lf-half-top-vr-15 {
   position: absolute;
   border-left: 5px solid black;
-  height: calc(100% - 144px);
+  height: calc(100% - 143px);
   width: 100%;
   margin-top: 144px;
   margin-left: 140px;
@@ -584,7 +584,7 @@
 .lf-half-top-vr-16 {
   position: absolute;
   border-left: 5px solid black;
-  height: calc(100% - 154px);
+  height: calc(100% - 153px);
   width: 100%;
   margin-top: 154px;
   margin-left: 150px;
@@ -721,7 +721,7 @@
 .rf-half-top-vr-1 {
   position: absolute;
   border-right: 5px solid black;
-  height: calc(100% - 4px);
+  height: calc(100% - 3px);
   width: 100%;
   margin-top: 4px;
   margin-left: 0px;
@@ -730,7 +730,7 @@
 .rf-half-top-vr-2 {
   position: absolute;
   border-right: 5px solid black;
-  height: calc(100% - 14px);
+  height: calc(100% - 13px);
   width: 100%;
   margin-top: 14px;
   margin-left: -10px;
@@ -739,7 +739,7 @@
 .rf-half-top-vr-3 {
   position: absolute;
   border-right: 5px solid black;
-  height: calc(100% - 24px);
+  height: calc(100% - 23px);
   width: 100%;
   margin-top: 24px;
   margin-left: -20px;
@@ -748,7 +748,7 @@
 .rf-half-top-vr-4 {
   position: absolute;
   border-right: 5px solid black;
-  height: calc(100% - 34px);
+  height: calc(100% - 33px);
   width: 100%;
   margin-top: 34px;
   margin-left: -30px;
@@ -757,7 +757,7 @@
 .rf-half-top-vr-5 {
   position: absolute;
   border-right: 5px solid black;
-  height: calc(100% - 44px);
+  height: calc(100% - 43px);
   width: 100%;
   margin-top: 44px;
   margin-left: -40px;
@@ -766,7 +766,7 @@
 .rf-half-top-vr-6 {
   position: absolute;
   border-right: 5px solid black;
-  height: calc(100% - 54px);
+  height: calc(100% - 53px);
   width: 100%;
   margin-top: 54px;
   margin-left: -50px;
@@ -775,7 +775,7 @@
 .rf-half-top-vr-7 {
   position: absolute;
   border-right: 5px solid black;
-  height: calc(100% - 64px);
+  height: calc(100% - 63px);
   width: 100%;
   margin-top: 64px;
   margin-left: -60px;
@@ -784,7 +784,7 @@
 .rf-half-top-vr-8 {
   position: absolute;
   border-right: 5px solid black;
-  height: calc(100% - 74px);
+  height: calc(100% - 73px);
   width: 100%;
   margin-top: 74px;
   margin-left: -70px;
@@ -793,7 +793,7 @@
 .rf-half-top-vr-9 {
   position: absolute;
   border-right: 5px solid black;
-  height: calc(100% - 84px);
+  height: calc(100% - 83px);
   width: 100%;
   margin-top: 84px;
   margin-left: -80px;
@@ -802,7 +802,7 @@
 .rf-half-top-vr-10 {
   position: absolute;
   border-right: 5px solid black;
-  height: calc(100% - 94px);
+  height: calc(100% - 93px);
   width: 100%;
   margin-top: 94px;
   margin-left: -90px;
@@ -811,7 +811,7 @@
 .rf-half-top-vr-11 {
   position: absolute;
   border-right: 5px solid black;
-  height: calc(100% - 104px);
+  height: calc(100% - 103px);
   width: 100%;
   margin-top: 104px;
   margin-left: -100px;
@@ -820,7 +820,7 @@
 .rf-half-top-vr-12 {
   position: absolute;
   border-right: 5px solid black;
-  height: calc(100% - 114px);
+  height: calc(100% - 113px);
   width: 100%;
   margin-top: 114px;
   margin-left: -110px;
@@ -829,7 +829,7 @@
 .rf-half-top-vr-13 {
   position: absolute;
   border-right: 5px solid black;
-  height: calc(100% - 124px);
+  height: calc(100% - 123px);
   width: 100%;
   margin-top: 124px;
   margin-left: -120px;
@@ -838,7 +838,7 @@
 .rf-half-top-vr-14 {
   position: absolute;
   border-right: 5px solid black;
-  height: calc(100% - 134px);
+  height: calc(100% - 133px);
   width: 100%;
   margin-top: 134px;
   margin-left: -130px;
@@ -847,7 +847,7 @@
 .rf-half-top-vr-15 {
   position: absolute;
   border-right: 5px solid black;
-  height: calc(100% - 144px);
+  height: calc(100% - 143px);
   width: 100%;
   margin-top: 144px;
   margin-left: -140px;
@@ -856,7 +856,7 @@
 .rf-half-top-vr-16 {
   position: absolute;
   border-right: 5px solid black;
-  height: calc(100% - 154px);
+  height: calc(100% - 153px);
   width: 100%;
   margin-top: 154px;
   margin-left: -150px;
@@ -1382,6 +1382,26 @@
 .mgn-y {
   margin-top: 5px;
   margin-bottom: 5px;
+}
+
+.mgn-res-r {
+  margin-right: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+  .mgn-res-r {
+    margin-right: 0;
+  }
+}
+
+.mgn-res-l {
+  margin-left: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+  .mgn-res-l {
+    margin-left: 0;
+  }
 }
 
 .nwvert-r-snd-1 {
